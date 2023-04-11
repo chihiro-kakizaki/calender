@@ -1,0 +1,77 @@
+@import "reset";
+
+* {
+  color: #666666;
+}
+
+.wrapper {
+  margin: 100px auto;
+}
+
+#header {
+  text-align: center;
+  font-size: 35px;
+}
+
+#next-prev-button {
+  width: 1115px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+#next,
+#prev {
+  cursor: pointer;
+  font-size: large;
+  background: #666666;
+  color: #ffffff;
+  border: none;
+  width: 130px;
+  height: 50px;
+  border-radius: 0.3rem;
+  padding: 5px 10px;
+  margin: auto 0;
+}
+
+#next:hover,
+#prev:hover {
+  background: #aaaaaa;
+}
+
+#calender {
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 160px 160px 160px 160px 160px 160px 160px;
+  grid-template-rows: 40px 180px 180px 180px 180px 180px 180px;
+  width: 100%;
+  justify-content: center;
+
+  * {
+    text-align: center;
+    border: 1px solid gray;
+    padding-top: 10px;
+  }
+  span {
+    .holiday {
+      color: #ffffff;
+      background: lightseagreen;
+      margin-top: 5px;
+      padding: 5px 0;
+      border: none;
+    }
+  }
+}
+
+// .holiday {
+//   color: #ffffff;
+//   background: green;
+// }
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
